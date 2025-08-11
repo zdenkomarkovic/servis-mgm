@@ -6,7 +6,7 @@ import { Facebook, Instagram } from "lucide-react";
 export default function Footer() {
   return (
     <motion.footer
-      className=" py-8 border-primary border-t bg-black"
+      className=" py-8 border-primary bg-black"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.5 }}

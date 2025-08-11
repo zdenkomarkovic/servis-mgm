@@ -20,8 +20,8 @@ export const metadata: Metadata = {
   description:
     "Servis MGM – stručna popravka i servis laptopova, desktop računara, elektronike i gejming konzola. Brza dijagnostika, kvalitetni delovi i garancija",
   icons: {
-    icon: "/manikam.png",
-    apple: "/manikam.png",
+    icon: "/apple-touch-icon.png",
+    apple: "/favicon-32x32.png",
   },
   keywords: ["", "", "", "", "", "", "", "", "", "", "", "", "", ""],
   alternates: {
