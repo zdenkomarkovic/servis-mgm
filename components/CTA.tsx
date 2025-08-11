@@ -3,13 +3,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { PhoneIcon } from "lucide-react";
 
-const PozoviteNasOdmah = () => {
+const CTA = ({ text }: { text: string }) => {
   return (
-    <div className="bg-foreground text-primary mt-10 md:mt-20 py-10 md:py-20  border-primary border-y">
+    <div className="bg-foreground text-primary mt-10 md:mt-20 py-10 md:py-20 border-primary border-y">
       <div className="container px-2 md:px-4 mx-auto font-bold flex flex-col md:flex-row items-center gap-10 md:gap-20">
-        <h2 className="text-xl md:text-4xl text-center ">
-          Servis MGM – da vaš uređaj ponovo radi kao nov, zakažite svoj termin!
-        </h2>
+        <h2 className="text-xl md:text-4xl text-center ">{text}</h2>
         <a href="tel:+381645523333">
           <motion.button
             whileHover={{ translateY: "-5px" }}
@@ -24,4 +22,4 @@ const PozoviteNasOdmah = () => {
   );
 };
 
-export default PozoviteNasOdmah;
+export default CTA;

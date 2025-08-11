@@ -6,7 +6,7 @@ import { Facebook, Instagram } from "lucide-react";
 export default function Footer() {
   return (
     <motion.footer
-      className=" py-8  shadow-[0px_-2px_5px_rgba(0,0,0,0.1)]"
+      className=" py-8 border-primary border-t bg-black"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.5 }}
@@ -38,8 +38,8 @@ export default function Footer() {
           <div className="space-y-3 pb-5 md:pb-0">
             <div>
               {" "}
-              <a href="tel:+38160 000 000">
-                <p className="hover:text-primary">Telefon: +38160 000 000</p>
+              <a href="tel:+381645523333">
+                <p className="hover:text-primary">Telefon: +38164 552 3333</p>
               </a>
             </div>
             <div>

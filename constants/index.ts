@@ -2,9 +2,8 @@ import { IconType } from "react-icons";
 import { GiWeightLiftingUp } from "react-icons/gi";
 import { GiWeight } from "react-icons/gi";
 import { IoFitnessOutline } from "react-icons/io5";
-import { MdOutlineSportsGymnastics } from "react-icons/md";
+import { FaPeopleCarry } from "react-icons/fa";
 import { IoIosPeople } from "react-icons/io";
-import { IoIosPerson } from "react-icons/io";
 import { PiRocketLaunchBold } from "react-icons/pi";
 import { LuTimerReset } from "react-icons/lu";
 
@@ -17,32 +16,164 @@ export const navList = [
     title: "Usluge",
     list: [
       {
-        title: "Kuhinje",
-        link: "",
+        title: "Servis laptop računara",
+        link: "/servis-laptop-racunara",
       },
       {
-        title: "Plakari",
-        link: "",
+        title: "Servis desktop računara",
+        link: "/servis-desktop-racunara",
       },
       {
-        title: "TV Komode",
-        link: "",
+        title: "Servis elektronike",
+        link: "servis-elektronike",
       },
       {
-        title: "Projektovanje Enterijera",
-        link: "",
+        title: "Servis i popravka konzola",
+        link: "servis-i-popravka-konzola",
+      },
+      {
+        title: "Prodaja i sklapanje konfiguracija",
+        link: "prodaja-i-sklapanje-konfiguracija",
       },
     ],
-  },
-  {
-    title: "Proizvodi",
-    link: "/proizvodi",
   },
   {
     title: "Kontakt",
     link: "/kontakt",
   },
 ];
+
+type Page = {
+  title: string;
+  text: string;
+  description: string;
+  lines: string[];
+  workflow: string;
+  image: string;
+  alt: string;
+  whyus: string[];
+  cta: string;
+};
+
+// Glavni objekat može imati bilo koji broj stranica
+type Pages = Record<string, Page>;
+
+export const pages: Pages = {
+  laptop: {
+    title: "Servis i popravka laptop računara – Servis MGM",
+    text: "Vaš laptop je postao spor, ne uključuje se ili ima oštećen ekran? Servis MGM nudi stručnu i brzu popravku svih vrsta laptop računara, bez obzira na brend i starost uređaja.",
+    description: "Naš tim dijagnostikuje i otklanja sve vrste kvarova:",
+    lines: [
+      "Zamena oštećenog ekrana",
+      "Popravka matične ploče",
+      "Zamena tastature ili touchpada",
+      "Čišćenje sistema hlađenja i zamena termalne paste",
+      "Popravka punjača i konektora za napajanje",
+      "Instalacija operativnog sistema i softvera",
+    ],
+    workflow:
+      "Prilikom prijema uređaja radimo detaljnu dijagnostiku i informišemo vas o kvaru i ceni popravke. Nakon vaše potvrde, vršimo servis i testiranje pre nego što vam vratimo laptop.",
+    image: "/laptop.jpg",
+    alt: "servis laptop",
+    whyus: [
+      "Više godina iskustva u popravci laptopova",
+      "Korišćenje originalnih i kvalitetnih delova",
+      "Brz rok isporuke",
+      "Garancija na izvršene radove",
+    ],
+    cta: "Pozovite nas odmah i osposobite svoj laptop – Servis MGM je vaš pouzdan partner!",
+  },
+  desctop: {
+    title: "Servis i popravka desktop računara – Servis MGM",
+    text: "Vaš desktop računar se ne pokreće, iznenada se gasi ili radi usporeno? Servis MGM pruža pouzdanu i brzu uslugu popravke i nadogradnje desktop računara svih tipova.",
+    description: "Naš tim dijagnostikuje i otklanja sve vrste kvarova:",
+    lines: [
+      "Popravka matične ploče i napajanja",
+      "Zamena grafičke ili zvučne kartice",
+      "Nadogradnja memorije i procesora",
+      "Zamena hard diska ili prelazak na SSD",
+      "Čišćenje prašine i optimizacija rada",
+      "Instalacija operativnog sistema i programa",
+    ],
+    workflow:
+      "Dijagnostikujemo problem, predlažemo rešenje i po dogovoru vršimo servis. Po završetku, računar testiramo kako bi bio potpuno spreman za rad.",
+    image: "/laptop.jpg",
+    alt: "servis desctop",
+    whyus: [
+      "Stručno osoblje sa iskustvom u hardveru i softveru",
+      "Korišćenje pouzdanih komponenti",
+      "Mogućnost nadogradnje sistema prema vašim potrebama",
+      "Garancija na sve popravke",
+    ],
+    cta: " Donesite svoj računar u Servis MGM i vratite ga u savršenu formu!",
+  },
+  electronics: {
+    title: "Servis elektronike – Servis MGM",
+    text: "Pored računara, bavimo se i popravkom razne elektronike. Od kućnih uređaja do specijalizovane opreme, pružamo stručnu i pouzdanu uslugu.",
+    description: "Naš tim dijagnostikuje i otklanja sve vrste kvarova:",
+    lines: [
+      "Popravka audio i video opreme",
+      "Servis monitora i televizora",
+      "Popravka štampača i skenera",
+      "Popravka i zamena elektronskih komponenti",
+      "Detaljna dijagnostika i optimizacija rada uređaja",
+    ],
+    workflow:
+      "Vaš uređaj prolazi kroz detaljnu dijagnostiku, nakon čega vas obaveštavamo o mogućnostima popravke i troškovima",
+    image: "/laptop.jpg",
+    alt: "servis elektronike",
+    whyus: [
+      "Iskustvo u radu sa raznovrsnom elektronikom",
+      "Korišćenje kvalitetnih delova",
+      "Pažljiv pristup svakom uređaju",
+    ],
+    cta: "Servis MGM – vaš partner za profesionalnu popravku elektronike!",
+  },
+  console: {
+    title: "Servis i popravka gejming konzola – Servis MGM",
+    text: "Konzola se ne uključuje, pregreva se ili ima problem sa čitanjem diskova? Servis MGM popravlja Sony PlayStation 4 i 5, Xbox i Nintendo konzole.",
+    description: "Naš tim dijagnostikuje i otklanja sve vrste kvarova:",
+    lines: [
+      "Zamena HDMI porta",
+      "Popravka matične ploče",
+      "Čišćenje ventilatora i zamena termalne paste",
+      "Popravka kontrolera i dodatne opreme",
+      "Reinstalacija softvera i ažuriranja sistema",
+    ],
+    workflow:
+      "Prvo radimo dijagnostiku kako bismo otkrili uzrok kvara, zatim vas kontaktiramo sa predlogom rešenja i cenom.",
+    image: "/laptop.jpg",
+    alt: "servis konzola",
+    whyus: [
+      "Brz i kvalitetan servis konzola",
+      "Iskustvo u radu sa svim generacijama uređaja",
+      "Garancija na rad i ugrađene delove",
+    ],
+    cta: "Servis MGM – igrajte bez brige, mi brinemo o vašoj konzoli!",
+  },
+  prodaja: {
+    title: "Prodaja i sklapanje računarskih konfiguracija – Servis MGM",
+    text: "Želite računar koji je tačno prilagođen vašim potrebama? Servis MGM nudi prodaju i sklapanje konfiguracija po meri – od kancelarijskih računara do moćnih gejming mašina.",
+    description: "Naš tim dijagnostikuje i otklanja sve vrste kvarova:",
+    lines: [
+      "Pomoć pri izboru komponenti",
+      "Sklapanje računara po narudžbini",
+      "Instalacija sistema i optimizacija rada",
+      "Testiranje stabilnosti",
+      "Garancija na sve komponente",
+    ],
+    workflow:
+      "Saslušamo vaše potrebe i budžet, predložimo optimalne komponente i sklopimo računar spreman za upotrebu.",
+    image: "/laptop.jpg",
+    alt: "prodaja komponenti",
+    whyus: [
+      "Višegodišnje iskustvo u sklapanju računara",
+      "Samo proverene i kvalitetne komponente",
+      "Prilagođeno rešenje za svakog korisnika",
+    ],
+    cta: "Naručite svoju konfiguraciju kod Servisa MGM i uživajte u savršenom radu!",
+  },
+};
 
 export interface WorkList {
   id: number;
@@ -53,38 +184,32 @@ export interface WorkList {
 export const workList = [
   {
     id: 1,
-    title: "Grupni treninzi",
-    text: "Oblikuj svoje telo i poboljšaj kondiciju uz dinamične grupne treninge! Vežbaj u motivišućem okruženju, uz stručno vođstvo i podršku tima. Pridruži se i zajedno postižemo ciljeve!",
-    icon: IoIosPeople,
+    title: "Donesite uređaj",
+    text: "ili nas kontaktirajte za savet",
+    icon: FaPeopleCarry,
   },
   {
     id: 2,
-    title: "Individualni treninzi",
-    text: "Ostvari maksimalne rezultate uz personalizovane individualne treninge! Treniraj prema svom tempu, uz stručnu podršku i plan prilagođen tvojim ciljevima. Fokus je na tebi!",
-    icon: IoIosPerson,
-  },
-  {
-    id: 3,
-    title: "Pilates",
-    text: "Poboljšaj fleksibilnost, snagu i držanje uz pilates treninge! Uz kontrolisane pokrete i fokus na disanje, oblikuj telo i oslobodi se stresa. Idealno za sve nivoe kondicije!",
+    title: "Dijagnostika",
+    text: "otkrivamo uzrok problema",
     icon: IoFitnessOutline,
   },
   {
+    id: 3,
+    title: "Ponuda",
+    text: "dogovaramo cenu i rok",
+    icon: IoIosPeople,
+  },
+  {
     id: 4,
-    title: "Body power",
-    text: "Ojačaj mišiće i poboljšaj izdržljivost uz intenzivan trening snage! Kombinacija tegova i funkcionalnih vežbi pomoći će ti da postigneš vrhunsku formu.",
+    title: "Servis i testiranje",
+    text: "Nakon servisa radimo detaljnu proveru",
     icon: GiWeightLiftingUp,
   },
   {
     id: 5,
-    title: "Mix-fit",
-    text: " Dinamičan spoj kardio i snage za maksimalne rezultate! Raznovrsni pokreti, visoka energija i zabavna atmosfera čine svaki trening izazovnim i efektivnim.",
-    icon: MdOutlineSportsGymnastics,
-  },
-  {
-    id: 6,
-    title: "Aeronix",
-    text: "Spoj aerobnih vežbi i funkcionalnog treninga za bolju kondiciju i oblikovanje tela! Povećaj izdržljivost, sagori kalorije i uživaj u energičnom ritmu vežbanja.",
+    title: "Preuzimanje uređaja",
+    text: "Dobijate uredjaj koji je spreman za dalji rad",
     icon: PiRocketLaunchBold,
   },
 ];
@@ -136,7 +261,9 @@ export const testimonialData: TestimonialData[] = [
 
 export interface Cards1Data {
   id: number;
-  icon: IconType;
+  link: string;
+  image: string;
+  alt: string;
   title: string;
   text: string;
 }
@@ -144,27 +271,43 @@ export interface Cards1Data {
 export const cards1Data: Cards1Data[] = [
   {
     id: 1,
-    icon: GiWeight,
-    title: "Iskustvo i profesionalizam",
-    text: "Višegodišnje iskustvo u opremanju enterijera.",
+    link: "/servis-laptop-racunara",
+    image: "/laptop.jpg",
+    alt: "laptop servis",
+    title: "Popravka i servis laptop računara",
+    text: "zamena ekrana, tastature, popravka matične ploče, čišćenje i optimizacija rada..",
   },
   {
     id: 2,
-    icon: GiWeight,
-    title: "Iskustvo i profesionalizam",
-    text: "Višegodišnje iskustvo u opremanju enterijera.",
+    link: "/servis-laptop-racunara",
+    image: "/laptop.jpg",
+    alt: "laptop servis",
+    title: "Popravka i servis desktop računara",
+    text: "otklanjanje hardverskih kvarova, nadogradnja komponenti, instalacija softvera.",
   },
   {
     id: 3,
-    icon: GiWeight,
-    title: "Iskustvo i profesionalizam",
-    text: "Višegodišnje iskustvo u opremanju enterijera.",
+    link: "/servis-laptop-racunara",
+    image: "/laptop.jpg",
+    alt: "laptop servis",
+    title: "Servis elektronike",
+    text: "popravka monitora, televizora, audio/video opreme, štampača i drugih uređaja.",
   },
   {
     id: 4,
-    icon: GiWeight,
-    title: "Srbija i inostranstvo",
-    text: "Višegodišnje iskustvo u opremanju enterijera.",
+    link: "/servis-laptop-racunara",
+    image: "/laptop.jpg",
+    alt: "laptop servis",
+    title: "Popravka gejming konzola",
+    text: "PlayStation 4 i 5, Xbox i Nintendo – od HDMI porta do čišćenja i softverskih problema.",
+  },
+  {
+    id: 5,
+    link: "/servis-laptop-racunara",
+    image: "/laptop.jpg",
+    alt: "laptop servis",
+    title: "Prodaja i sklapanje konfiguracija",
+    text: "računar sklopljen po vašim potrebama, spreman za rad od prvog dana.",
   },
 ];
 
@@ -249,20 +392,32 @@ export const cards2Data: Cards2Data[] = [
   {
     id: 1,
     icon: GiWeight,
-    title: "Elektroinstalacije",
-    text: "",
+    title: "Iskustvo i stručnost",
+    text: "godine rada sa različitim vrstama tehnike",
   },
   {
     id: 2,
     icon: GiWeight,
-    title: "Elektro ormani",
-    text: "",
+    title: "Kvalitetni delovi",
+    text: "samo originalne i proverenih proizvođača",
   },
   {
     id: 3,
     icon: GiWeight,
-    title: "Industrijski elektro ormani",
-    text: "",
+    title: "Brza dijagnostika",
+    text: "kvar otkrivamo i rešavamo u najkraćem roku",
+  },
+  {
+    id: 4,
+    icon: GiWeight,
+    title: "Garancija na rad",
+    text: "sigurnost i poverenje u našu uslugu",
+  },
+  {
+    id: 5,
+    icon: GiWeight,
+    title: "Pristupačne cene",
+    text: "odličan odnos kvaliteta i cene",
   },
 ];
 

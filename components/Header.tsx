@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Logo from "../public/manikam.png";
+import Logo from "../public/logo.png";
 import Link from "next/link";
 import { ChevronDownIcon, MenuIcon, PhoneIcon } from "lucide-react";
 
@@ -158,18 +158,18 @@ export default function Header() {
           : "bg-transparent"
       }  fixed top-0 left-0 right-0 z-[10] transition-colors`}
     >
-      <nav className="flex items-center justify-between px-8 py-4 max-w-[80rem] w-full text-primary font-bold">
+      <nav className="flex items-center justify-between px-8 py-2 max-w-[80rem] w-full text-primary font-bold">
         <Link href="/" className="">
           <Image
             src={Logo}
             alt="dm rustic 24"
-            width={50}
-            height={50}
-            className="rounded-full"
+            width={60}
+            height={60}
+            className=""
           />
         </Link>
         <DesktopNav />
-        <Link href="tel:+3816">
+        <Link href="tel:+381645523333">
           <motion.button
             whileHover={{
               color: "hsl(var(--foreground))",
@@ -178,7 +178,7 @@ export default function Header() {
             className=" items-center justify-center rounded-full text-primary border-primary border-2 text-sm md:text-lg py-1 px-2 md:py-2 md:px-4 transition-colors flex"
           >
             <PhoneIcon />
-            <p className="">+38160 000 000</p>
+            <p className="">+38164 552 3333</p>
           </motion.button>
         </Link>
         <MobileMenu />
