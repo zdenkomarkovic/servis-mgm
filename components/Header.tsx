@@ -27,9 +27,9 @@ import { HoverCard, HoverCardTrigger, HoverCardContent } from "./ui/hover-card";
 const mobTitleStyles = "text-lg py-2";
 
 const MobileMenu = () => (
-  <Sheet>
-    <SheetTrigger className="lg:hidden">
-      <MenuIcon className="text-primary cursor-pointer" />
+  <Sheet className="text-primary">
+    <SheetTrigger className="lg:hidden text-primary">
+      <MenuIcon className="cursor-pointer" />
     </SheetTrigger>
     <SheetContent>
       <SheetHeader>
@@ -46,7 +46,7 @@ const MobileMenu = () => (
                           whileHover={{ color: "hsl(var(--primary))" }}
                         >
                           <AccordionTrigger
-                            className={`${mobTitleStyles} hover:no-underline`}
+                            className={`${mobTitleStyles} hover:no-underline text-primary`}
                           >
                             {item.title}
                           </AccordionTrigger>
@@ -54,14 +54,14 @@ const MobileMenu = () => (
                         <AccordionContent>
                           {item.list.map((link, index2) => (
                             <Link
-                              className="pl-6 block font-light py-2"
+                              className="pl-6 block font-light py-2 text-primary"
                               key={`${index}.${index2}`}
                               href={link.link}
                             >
                               <motion.li
                                 whileHover={{ color: "hsl(var(--primary))" }}
                               >
-                                {link.title}
+                                <SheetTrigger>{link.title}</SheetTrigger>
                               </motion.li>
                             </Link>
                           ))}
@@ -76,7 +76,9 @@ const MobileMenu = () => (
                     whileHover={{ color: "hsl(var(--primary))" }}
                     className={mobTitleStyles}
                   >
-                    <SheetTrigger>{item.title}</SheetTrigger>
+                    <SheetTrigger className="text-primary">
+                      {item.title}
+                    </SheetTrigger>
                   </motion.li>
                 </Link>
               );
