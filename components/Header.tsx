@@ -27,7 +27,7 @@ import { HoverCard, HoverCardTrigger, HoverCardContent } from "./ui/hover-card";
 const mobTitleStyles = "text-lg py-2";
 
 const MobileMenu = () => (
-  <Sheet className="text-primary">
+  <Sheet>
     <SheetTrigger className="lg:hidden text-primary">
       <MenuIcon className="cursor-pointer" />
     </SheetTrigger>

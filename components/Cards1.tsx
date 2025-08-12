@@ -12,7 +12,7 @@ import Link from "@/node_modules/next/link";
 
 const Cards1 = ({ title, data }: { title: string; data: Cards1Data[] }) => {
   return (
-    <div className="">
+    <div id="usluge" className="">
       <div className="container px-5 md:px-32 mx-auto py-10 md:py-20 border-t-2 space-y-6 md:space-y-8">
         <h2 className="text-4xl md:text-5xl text-center text-primary font-bold mb-10 md:mb-20">
           {title}

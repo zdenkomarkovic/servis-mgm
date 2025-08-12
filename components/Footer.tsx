@@ -22,7 +22,7 @@ export default function Footer() {
               </li>
 
               <li>
-                <Link href="/usluge" className=" hover:text-primary">
+                <Link href="/#usluge" className=" hover:text-primary">
                   Usluge
                 </Link>
               </li>
@@ -50,25 +50,24 @@ export default function Footer() {
               </a>
             </div>
             <div className="flex space-x-4 justify-center md:justify-start">
-              <a href="#" target={"_blank"} className="hover:text-primary">
-                <Facebook />
-              </a>
-              <a href="#" target={"_blank"} className="hover:text-primary">
+              <a
+                href="https://www.instagram.com/servismgm2017/"
+                target={"_blank"}
+                className="hover:text-primary"
+              >
                 <Instagram />
               </a>
             </div>
           </div>
           <div className="md:col-span-1 col-span-2 text-center text-primary">
-            <h3 className="text-lg font-semibold mb-2 md:mb-4">
-              starter naslov
-            </h3>
+            <h3 className="text-lg font-semibold mb-2 md:mb-4">Servis MGM</h3>
 
-            <p className=" font-bold ">starter poruka</p>
+            <p className=" font-bold ">Za savršen rad vaših uređaja</p>
           </div>
         </div>
 
         <div className="flex flex-col md:flex-row justify-center text-center gap-2 md:gap-10 border-t-[1px] border-cool-green mt-10 pt-5">
-          <p>&copy; 2025 _________. Sva prava zadržana.</p>
+          <p>&copy; 2025 Servis MGM. Sva prava zadržana.</p>
           <a href="https://www.manikamwebsolutions.com/" target="_blank">
             izrada sajta:{" "}
             <span className="font-bold text-primary"> ManikamWebSolutions</span>
