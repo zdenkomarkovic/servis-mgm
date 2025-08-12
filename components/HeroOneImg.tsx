@@ -29,10 +29,7 @@ const Hero = () => {
         </h1>
         <p className="text-white text-center">
           Dobrodošli u Servis MGM, vaš pouzdan partner za servis i popravku
-          laptop računara, desktop računara, elektronike i gejming konzola. Bilo
-          da vam je potrebna brza dijagnostika, zamena komponenti, čišćenje
-          uređaja ili sklapanje nove konfiguracije po meri – kod nas ćete dobiti
-          stručnu uslugu, kvalitetne delove i garanciju na rad.
+          laptop računara, desktop računara, elektronike i gejming konzola.
         </p>
         <div className="flex flex-col gap-4 md:flex-row">
           <a href="tel:+3816000000">
