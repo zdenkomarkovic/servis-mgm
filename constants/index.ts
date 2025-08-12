@@ -284,7 +284,7 @@ export const cards1Data: Cards1Data[] = [
   },
   {
     id: 2,
-    link: "/servis-laptop-racunara",
+    link: "/servis-desktop-racunara",
     image: "/laptop.jpg",
     alt: "laptop servis",
     title: "Popravka i servis desktop računara",
@@ -292,7 +292,7 @@ export const cards1Data: Cards1Data[] = [
   },
   {
     id: 3,
-    link: "/servis-laptop-racunara",
+    link: "/servis-elektronike",
     image: "/laptop.jpg",
     alt: "laptop servis",
     title: "Servis elektronike",
@@ -300,7 +300,7 @@ export const cards1Data: Cards1Data[] = [
   },
   {
     id: 4,
-    link: "/servis-laptop-racunara",
+    link: "/servis-i-popravka-konzola",
     image: "/laptop.jpg",
     alt: "laptop servis",
     title: "Popravka gejming konzola",
@@ -308,7 +308,7 @@ export const cards1Data: Cards1Data[] = [
   },
   {
     id: 5,
-    link: "/servis-laptop-racunara",
+    link: "/prodaja-i-sklapanje-konfiguracija",
     image: "/laptop.jpg",
     alt: "laptop servis",
     title: "Prodaja i sklapanje konfiguracija",

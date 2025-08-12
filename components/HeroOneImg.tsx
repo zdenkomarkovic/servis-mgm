@@ -36,7 +36,7 @@ const Hero = () => {
             <motion.button
               whileHover={{ translateY: "-5px" }}
               whileTap={{ scale: 0.95 }}
-              className=" text-muted bg-primary rounded-lg px-4 md:px-8 md:py-3 py-2 font-medium"
+              className="text-primary border-2 border-primary md:text-muted md:bg-primary rounded-lg px-4 md:px-8 md:py-3 py-2 font-medium"
             >
               Pozovite odmah
             </motion.button>
