@@ -1,6 +1,7 @@
 "use client";
 
 import Hero3 from "../public/hero.png";
+import Hero2 from "../public/herom.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -12,7 +13,13 @@ const Hero = () => {
         src={Hero3}
         alt="servis racunara"
         fill
-        className="w-full h-[100dvh] object-cover"
+        className="hidden md:block w-full h-[100dvh] object-cover"
+      />
+      <Image
+        src={Hero2}
+        alt="servis racunara"
+        fill
+        className="md:hidden w-full h-[100dvh] object-cover"
       />
 
       <div className="relative container px-2 md:px-4 mx-auto  flex flex-col gap-6 items-center justify-center z-[1] ">
