@@ -43,9 +43,9 @@ export default function Footer() {
               </a>
             </div>
             <div>
-              <a href="mailto:" target={"_blank"}>
+              <a href="mailto:servismgm@gmail.com" target={"_blank"}>
                 <p className="text-wrap  hover:text-primary">
-                  Email: starter mail
+                  Email: servismgm@gmail.com
                 </p>
               </a>
             </div>

@@ -42,11 +42,11 @@ const OneCard = ({ item }: { item: Cards2Data }) => {
 
   return (
     <Card className="h-full border-primary">
-      <CardHeader className=" text-primary font-bold p-2">
+      <CardHeader className=" text-primary font-bold">
         <IconComponent className="text-4xl md:text-6xl mx-auto my-2" />
         {item.title}
       </CardHeader>
-      <CardContent className="">{item.text}</CardContent>
+      <CardContent className="pb-2">{item.text}</CardContent>
     </Card>
   );
 };

@@ -6,6 +6,11 @@ import { FaPeopleCarry } from "react-icons/fa";
 import { IoIosPeople } from "react-icons/io";
 import { PiRocketLaunchBold } from "react-icons/pi";
 import { LuTimerReset } from "react-icons/lu";
+import { GrUserExpert } from "react-icons/gr";
+import { SiNicehash } from "react-icons/si";
+import { GoStopwatch } from "react-icons/go";
+import { IoCheckmarkDoneCircleSharp } from "react-icons/io5";
+import { GiTakeMyMoney } from "react-icons/gi";
 
 export const navList = [
   {
@@ -396,31 +401,31 @@ export interface Cards2Data {
 export const cards2Data: Cards2Data[] = [
   {
     id: 1,
-    icon: GiWeight,
+    icon: GrUserExpert,
     title: "Iskustvo i stručnost",
     text: "godine rada sa različitim vrstama tehnike",
   },
   {
     id: 2,
-    icon: GiWeight,
+    icon: SiNicehash,
     title: "Kvalitetni delovi",
     text: "samo originalne i proverenih proizvođača",
   },
   {
     id: 3,
-    icon: GiWeight,
+    icon: GoStopwatch,
     title: "Brza dijagnostika",
     text: "kvar otkrivamo i rešavamo u najkraćem roku",
   },
   {
     id: 4,
-    icon: GiWeight,
+    icon: IoCheckmarkDoneCircleSharp,
     title: "Garancija na rad",
     text: "sigurnost i poverenje u našu uslugu",
   },
   {
     id: 5,
-    icon: GiWeight,
+    icon: GiTakeMyMoney,
     title: "Pristupačne cene",
     text: "odličan odnos kvaliteta i cene",
   },
