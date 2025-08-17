@@ -102,7 +102,7 @@ export const pages: Pages = {
     ],
     workflow:
       "Dijagnostikujemo problem, predlažemo rešenje i po dogovoru vršimo servis. Po završetku, računar testiramo kako bi bio potpuno spreman za rad.",
-    image: "/laptop.jpg",
+    image: "/desktop.jpg",
     alt: "servis desctop",
     whyus: [
       "Stručno osoblje sa iskustvom u hardveru i softveru",
@@ -125,7 +125,7 @@ export const pages: Pages = {
     ],
     workflow:
       "Vaš uređaj prolazi kroz detaljnu dijagnostiku, nakon čega vas obaveštavamo o mogućnostima popravke i troškovima",
-    image: "/laptop.jpg",
+    image: "/290.jpg",
     alt: "servis elektronike",
     whyus: [
       "Iskustvo u radu sa raznovrsnom elektronikom",
@@ -152,7 +152,7 @@ export const pages: Pages = {
     ],
     workflow:
       "Prvo radimo dijagnostiku kako bismo otkrili uzrok kvara, zatim vas kontaktiramo sa predlogom rešenja i cenom.",
-    image: "/laptop.jpg",
+    image: "/483.jpg",
     alt: "servis konzola",
     whyus: [
       "Brz i kvalitetan servis konzola",
@@ -174,7 +174,7 @@ export const pages: Pages = {
     ],
     workflow:
       "Saslušamo vaše potrebe i budžet, predložimo optimalne komponente i sklopimo računar spreman za upotrebu.",
-    image: "/laptop.jpg",
+    image: "/konfiguracija.jpg",
     alt: "prodaja komponenti",
     whyus: [
       "Višegodišnje iskustvo u sklapanju računara",
@@ -290,7 +290,7 @@ export const cards1Data: Cards1Data[] = [
   {
     id: 2,
     link: "/servis-desktop-racunara",
-    image: "/laptop.jpg",
+    image: "/desktop.jpg",
     alt: "laptop servis",
     title: "Popravka i servis desktop računara",
     text: "otklanjanje hardverskih kvarova, nadogradnja komponenti, instalacija softvera.",
@@ -298,7 +298,7 @@ export const cards1Data: Cards1Data[] = [
   {
     id: 3,
     link: "/servis-elektronike",
-    image: "/laptop.jpg",
+    image: "/290.jpg",
     alt: "laptop servis",
     title: "Servis elektronike",
     text: "popravka monitora, televizora, audio/video opreme, štampača i drugih uređaja.",
@@ -306,7 +306,7 @@ export const cards1Data: Cards1Data[] = [
   {
     id: 4,
     link: "/servis-i-popravka-konzola",
-    image: "/laptop.jpg",
+    image: "/483.jpg",
     alt: "laptop servis",
     title: "Popravka gejming konzola",
     text: "PlayStation 4 i 5, Xbox i Nintendo – od HDMI porta do čišćenja i softverskih problema.",
@@ -314,7 +314,7 @@ export const cards1Data: Cards1Data[] = [
   {
     id: 5,
     link: "/prodaja-i-sklapanje-konfiguracija",
-    image: "/laptop.jpg",
+    image: "/konfiguracija.jpg",
     alt: "laptop servis",
     title: "Prodaja i sklapanje konfiguracija",
     text: "računar sklopljen po vašim potrebama, spreman za rad od prvog dana.",

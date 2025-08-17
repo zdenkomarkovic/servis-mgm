@@ -37,6 +37,7 @@ const page = () => {
               width={500}
               height={500}
               alt={pages.prodaja.alt}
+              className="aspect-video object-cover"
             />
           </motion.div>
         </div>

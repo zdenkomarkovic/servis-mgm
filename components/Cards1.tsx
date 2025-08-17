@@ -55,7 +55,7 @@ const OneCard = ({ item }: { item: Cards1Data }) => {
     <Card className="h-full flex flex-col justify-between  overflow-hidden relative border-primary">
       <CardHeader className="">
         <div className="w-full relative">
-          <div className="absolute w-full h-full bg-black/50"></div>
+          <div className="absolute w-full h-full bg-black/20"></div>
           <Image
             src={item.image}
             width={500}

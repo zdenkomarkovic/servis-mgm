@@ -4,7 +4,7 @@ import MotionComponent1 from "./MotionComponent1";
 const Cards2Kosina = ({ title, data }: { title: string; data: string[] }) => {
   return (
     <div className="">
-      <div className="container px-5 mx-auto py-10 md:py-16 border-b-2 space-y-10 md:space-y-20">
+      <div className="container px-5 mx-auto pt-10 md:pt-16  space-y-10 md:space-y-20">
         <h2 className="text-4xl md:text-5xl text-center text-primary font-bold">
           {title}
         </h2>

@@ -6,7 +6,7 @@ import { Instagram } from "lucide-react";
 export default function Footer() {
   return (
     <motion.footer
-      className=" py-8 border-primary bg-black"
+      className="border-t py-8 border-primary bg-black shadow-primary shadow-inner"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.5 }}
