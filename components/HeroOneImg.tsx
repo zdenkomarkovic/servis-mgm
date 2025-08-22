@@ -32,7 +32,7 @@ const Hero = () => {
           laptop računara, desktop računara, elektronike i gejming konzola.
         </p>
         <div className="flex flex-col gap-4 md:flex-row">
-          <a href="tel:+3816000000">
+          <a href="tel:+381645523333">
             <motion.button
               whileHover={{ translateY: "-5px" }}
               whileTap={{ scale: 0.95 }}
