@@ -23,6 +23,9 @@ const Hero = () => {
       />
 
       <div className="relative container px-2 md:px-4 mx-auto  flex flex-col gap-6 items-center justify-center z-[1] ">
+        <p className=" text-center uppercase text-red-500">
+          Dragi klijenti, trenutno smo na odmoru, vidimo se od 01.septembra
+        </p>
         <h1 className="flex flex-col">
           <span>Servis MGM</span>
           Servis i popravka računara, elektronike i konzola
