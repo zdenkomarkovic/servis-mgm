@@ -1,9 +1,17 @@
-"use client";
+﻿"use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { Instagram } from "lucide-react";
+import { GOOGLE_ADS_CONFIG } from "@/constants/google-ads";
 
 export default function Footer() {
+  const trackPhoneCall = () => {
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'conversion', {
+        'send_to': `${GOOGLE_ADS_CONFIG.CONVERSION_ID}/${GOOGLE_ADS_CONFIG.PHONE_CALL_LABEL}`
+      });
+    }
+  };
   return (
     <motion.footer
       className="border-t py-8 border-primary bg-black shadow-primary shadow-inner"
@@ -38,7 +46,7 @@ export default function Footer() {
           <div className="space-y-3 pb-5 md:pb-0">
             <div>
               {" "}
-              <a href="tel:+381645523333">
+              <a href="tel:+381645523333" onClick={trackPhoneCall}>
                 <p className="hover:text-primary">Telefon: +38164 552 3333</p>
               </a>
             </div>
@@ -68,6 +76,9 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row justify-center text-center gap-2 md:gap-10 border-t-[1px] border-cool-green mt-10 pt-5">
           <p>&copy; 2025 Servis MGM. Sva prava zadržana.</p>
+          <Link href="/privacy-policy" className="hover:text-primary">
+            Privacy Policy
+          </Link>
           <a href="https://www.manikamwebsolutions.com/" target="_blank">
             izrada sajta:{" "}
             <span className="font-bold text-primary"> ManikamWebSolutions</span>

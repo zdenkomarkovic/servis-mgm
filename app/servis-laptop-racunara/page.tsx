@@ -1,5 +1,5 @@
 "use client";
-import CTA from "@/components/CTA";
+import PozoviteNasOdmah from "@/components/PozoviteNasOdmah";
 import { pages } from "@/constants/index";
 import Image from "@/node_modules/next/image";
 import React from "react";
@@ -45,7 +45,7 @@ const page = () => {
           {pages.laptop.workflow}
         </p>
       </div>
-      <CTA text={pages.laptop.cta} />
+      <PozoviteNasOdmah />
       <Cards2Kosina title={"Zašto izabrati nas"} data={pages.laptop.whyus} />
     </div>
   );

@@ -59,35 +59,33 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="sr">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased text-muted bg-muted-foreground  text-lg md:text-2xl`}
-      >
+      <head>
         {/* Google Ads Global Site Tag */}
         <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ADS_CONFIG.CONVERSION_ID}`}
+          src={https://www.googletagmanager.com/gtag/js?id=}
           strategy="afterInteractive"
         />
         <Script id="google-ads-init" strategy="afterInteractive">
-          {`
+          {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${GOOGLE_ADS_CONFIG.CONVERSION_ID}');
-          `}
+            gtag('config', '');
+          }
         </Script>
         
         {/* Google Analytics 4 */}
         <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ADS_CONFIG.GA4_ID}`}
+          src={https://www.googletagmanager.com/gtag/js?id=}
           strategy="afterInteractive"
         />
         <Script id="ga4-init" strategy="afterInteractive">
-          {`
+          {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${GOOGLE_ADS_CONFIG.GA4_ID}');
-          `}
+            gtag('config', '');
+          }
         </Script>
 
         {/* Schema.org Local Business Markup */}
@@ -108,7 +106,7 @@ export default function RootLayout({
                 "addressLocality": "Beograd"
               },
               "openingHours": "Mo-Fr 09:00-18:00",
-              "priceRange": "$$",
+              "priceRange": "}",
               "serviceArea": {
                 "@type": "GeoCircle",
                 "geoMidpoint": {
@@ -155,7 +153,10 @@ export default function RootLayout({
             })
           }}
         />
-
+      </head>
+      <body
+        className={${geistSans.variable}  antialiased text-muted bg-muted-foreground  text-lg md:text-2xl}
+      >
         <Header />
         {children}
         <ButtonToTop />

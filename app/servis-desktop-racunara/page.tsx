@@ -1,10 +1,10 @@
 "use client";
-import CTA from "@/components/CTA";
 import { pages } from "@/constants/index";
 import Image from "@/node_modules/next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import Cards2Kosina from "@/components/Cards2Kosina";
+import PozoviteNasOdmah from "@/components/PozoviteNasOdmah";
 
 const page = () => {
   return (
@@ -45,7 +45,7 @@ const page = () => {
           {pages.desctop.workflow}
         </p>
       </div>
-      <CTA text={pages.desctop.cta} />
+        <PozoviteNasOdmah />
       <Cards2Kosina title={"Zašto izabrati nas"} data={pages.desctop.whyus} />
     </div>
   );

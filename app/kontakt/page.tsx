@@ -20,6 +20,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail } from "lucide-react";
+import { GOOGLE_ADS_CONFIG } from "@/constants/google-ads";
 
 const contactFormSchema = z.object({
   name: z.string().min(2, { message: "Molimo unesite vase ime i prezime" }),
@@ -55,6 +56,13 @@ export default function Contact() {
     }
     form.reset();
   };
+  const trackPhoneCall = () => {
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'conversion', {
+        'send_to': `${GOOGLE_ADS_CONFIG.CONVERSION_ID}/${GOOGLE_ADS_CONFIG.PHONE_CALL_LABEL}`
+      });
+    }
+  };
   return (
     <div className="">
       <div className="container mx-auto pt-28 pb-16 px-6 md:px-8 md:py-32 space-y-12 md:space-y-24">
@@ -63,7 +71,7 @@ export default function Contact() {
           <div className=" mx-2 md:mx-20">
             <div className="space-y-3 md:space-y-10 text-lg md:text-2xl">
               <a
-                href="tel:+381645523333"
+                href="tel:+381645523333" onClick={trackPhoneCall}
                 className="py-[7px] flex border-b-[1px] border-primary"
               >
                 <button className="hover:scale-110 transition-transform duration-500 px-4 md:px-8 flex gap-4 items-center">
@@ -72,7 +80,7 @@ export default function Contact() {
                 </button>
               </a>
               <a
-                href="viber://chat?number=%2B381645523333"
+                href="viber://chat?number=%2B381645523333" onClick={trackPhoneCall}
                 className="py-[7px] flex border-b-[1px] border-primary"
               >
                 <button className="hover:scale-110 transition-transform duration-500 px-4 md:px-8 flex gap-4 items-center">
@@ -81,7 +89,7 @@ export default function Contact() {
                 </button>
               </a>
               <a
-                href="https://wa.me/381645523333"
+                href="https://wa.me/381645523333" onClick={trackPhoneCall}
                 className="py-[7px] flex border-b-[1px] border-primary"
               >
                 <button className="hover:scale-110 transition-transform duration-500 px-4 md:px-8 flex gap-4 items-center">

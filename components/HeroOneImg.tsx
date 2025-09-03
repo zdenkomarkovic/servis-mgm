@@ -4,9 +4,17 @@ import Hero3 from "../public/hero.png";
 import Hero2 from "../public/herom.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { GOOGLE_ADS_CONFIG } from "@/constants/google-ads";
 
 const Hero = () => {
-  return (
+  const trackPhoneCall = () => {
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'conversion', {
+        'send_to': `${GOOGLE_ADS_CONFIG.CONVERSION_ID}/${GOOGLE_ADS_CONFIG.PHONE_CALL_LABEL}`
+      });
+    }
+  };
+    return (
     <div className="relative flex min-h-[100dvh]">
       <div className="absolute top-0 left-0 w-full h-full bg-black/20 z-[1]" />
       <Image
@@ -32,7 +40,7 @@ const Hero = () => {
           laptop računara, desktop računara, elektronike i gejming konzola.
         </p>
         <div className="flex flex-col gap-4 md:flex-row">
-          <a href="tel:+381645523333">
+          <a href="tel:+381645523333" onClick={trackPhoneCall}>
             <motion.button
               whileHover={{ translateY: "-5px" }}
               whileTap={{ scale: 0.95 }}

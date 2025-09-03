@@ -23,6 +23,7 @@ import {
   AccordionContent,
 } from "./ui/accordion";
 import { HoverCard, HoverCardTrigger, HoverCardContent } from "./ui/hover-card";
+import { GOOGLE_ADS_CONFIG } from "@/constants/google-ads";
 
 const mobTitleStyles = "text-lg py-2";
 
@@ -152,6 +153,14 @@ export default function Header() {
     };
   }, []);
 
+  const trackPhoneCall = () => {
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'conversion', {
+        'send_to': `${GOOGLE_ADS_CONFIG.CONVERSION_ID}/${GOOGLE_ADS_CONFIG.PHONE_CALL_LABEL}`
+      });
+    }
+  };
+
   return (
     <header
       className={`flex justify-center ${
@@ -171,7 +180,7 @@ export default function Header() {
           />
         </Link>
         <DesktopNav />
-        <Link href="tel:+381645523333">
+        <Link href="tel:+381645523333" onClick={trackPhoneCall}>
           <motion.button
             whileHover={{
               color: "hsl(var(--foreground))",
