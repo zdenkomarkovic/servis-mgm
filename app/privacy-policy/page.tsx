@@ -25,7 +25,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-2xl font-semibold mb-4 text-primary">1. Uvod</h2>
             <p>
-              Servis MGM ("mi", "naš", "nas") poštuje vašu privatnost i obavezuje se da zaštiti vaše lične podatke. 
+              Servis MGM (&quot;mi&quot;, &quot;naš&quot;, &quot;nas&quot;) poštuje vašu privatnost i obavezuje se da zaštiti vaše lične podatke.
               Ova Privacy Policy objašnjava kako prikupljamo, koristimo i štitimo vaše informacije kada koristite naš sajt.
             </p>
           </section>
