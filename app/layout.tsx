@@ -21,16 +21,15 @@ export const metadata: Metadata = {
   title: "Servis i popravka računara, elektronike i konzola – Servis MGM",
   description:
     "Servis MGM – stručna popravka i servis laptopova, desktop računara, elektronike i gejming konzola. Brza dijagnostika, kvalitetni delovi i garancija",
-    icons: {
-      icon: [
-        { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-        { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-        { url: "/favicon.ico", sizes: "any" }
-      ],
-      apple: "/apple-touch-icon.png",
-    },
-    manifest: "/site.webmanifest",
+  icons: {
+    icon: [
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.ico", sizes: "any" }
+    ],
+    apple: "/apple-touch-icon.png",
   },
+  manifest: "/site.webmanifest",
   keywords: [
     "servis laptopova",
     "popravka laptopova",
