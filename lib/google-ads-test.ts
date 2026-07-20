@@ -45,7 +45,7 @@ export const testGoogleAds = () => {
   if (schemaScript) {
     console.log('✅ Schema.org markup found');
     try {
-      const schemaData = JSON.parse(schemaScript.textContent);
+      const schemaData = JSON.parse(schemaScript.textContent ?? '');
       console.log('📋 Schema data:', schemaData);
     } catch (error) {
       console.log('❌ Schema.org markup parsing failed:', error);
